@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+
+This theme will turn all your posts to a height of 1 pixel, which will reveal their nature as a part of a textile in constant construction.
+
+Hector Llanquin, 2010
+http://hectorllanquin.com
+
+-->
+
+
+<html lang="en">
+
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>{Title}{block:PostTitle}/title>
+	{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
+
+	<meta name="text:Disqus shortname" content="" />
+
+	<meta name="if:Show RSS and Archive buttons" content="1">
+	<meta name="if:Show URL in posts" content="1">
+	<meta name="if:Show note count" content="1">
+	<meta name="if:Show notes on permalink page" content="1">
+
+
+
+
+	<style type="text/css">
+	body {
+		font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 10px;
+		color: white;
+		background: #FFFFFF;
+		padding: 0;
+    background: {color:Background} url('http://i297.photobucket.com/albums/mm240/llanquin/gradientablancoynegro.png');
+    background:repeat-x:
+	}
+#content {
+  width: 100%;
+}
+.post {
+  margin:0;
+  padding:0;
+  align:center;
+  font-size: 0px;
+  display:block;
+
+}
+img {
+  border:0px;
+  height:1px;
+  width:666px;
+  align:center;
+}
+
+hr {
+  border: 1;
+  width: 900px;
+  height:1px;
+}
+	</style>
+ <script type="text/javascript" src="http://proto.jp/js/tumblrAutoPager.js"></script>
+</head>
+<body>
+	<div id="content">
+
+<br><br><br>
+<br><br><br>
+<center>
+		{block:Posts}
+			<div class="post">
+<Div class = "autopagerize_page_element">
+				    <!-- Loops for each post-type -->
+				{block:Photo}
+					{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+				{/block:Photo}
+		{/block:Posts}
+</center>
+<br><br><br>
+<br><br><br>
+		</div>
+</body>
+</html>
